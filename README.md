@@ -21,6 +21,50 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
-            <<include your coding and its corressponding output screen shots here>>
+
+Data Cleaning:
+
+ import pandas as pd
+ a=pd.read_csv("/content/SAMPLEIDS.csv")
+ a
+
+ ![image](https://github.com/user-attachments/assets/a8cf471a-0a8e-4765-943b-232674b86f36)
+
+df.info()
+
+![image](https://github.com/user-attachments/assets/c3bd2345-854f-4d80-8cc1-e3e4bc9fb63f)
+
+df.isnull().sum()
+
+![image](https://github.com/user-attachments/assets/662446b4-d675-4927-aecb-21584ed2a3a0)
+
+df.nunique()
+
+![image](https://github.com/user-attachments/assets/67659b5a-7435-4d1d-af14-6cf82faa519c)
+
+df.dropna()
+
+![image](https://github.com/user-attachments/assets/e3471ae2-9f9a-4217-b2db-a429f335c826)
+
+df.fillna(0)
+
+![image](https://github.com/user-attachments/assets/a885b5f8-9769-4a5c-a7b1-819ec04369ee)
+
+df.fillna(method='ffill')
+
+![image](https://github.com/user-attachments/assets/319bb616-b666-4964-802c-85c1c2342703)
+
+df.fillna(method='bfill')
+
+![image](https://github.com/user-attachments/assets/09c41dcd-2016-4d1d-8b20-41563c3b8d94)
+
+delete=df.dropna()
+delete
+
+![image](https://github.com/user-attachments/assets/db19e2d5-48ca-4e57-a736-09620150f689)
+
+
+
+           
 # Result
           <<include your Result here>>
